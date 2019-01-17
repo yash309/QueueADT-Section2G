@@ -7,10 +7,10 @@ public class QueueADT
 	int front = -1;
 	int rear = -1;
 	int size = queue.length;
-
 	void enqueue(int value)
 	{
-
+	rear++;
+	queue[rear]= value;
 	}
 
 	int dequeue()
